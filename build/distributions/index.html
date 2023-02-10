@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module">
+        import { LaTeXJSComponent } from "https://cdn.jsdelivr.net/npm/latex.js/dist/latex.mjs"
+        customElements.define("latex-js", LaTeXJSComponent)
+    </script>
+
+    <title>JS Client</title>
+</head>
+<body>
+
+<div id="calc">
+    <form>
+        <label for="calc-input">Input:</label>
+        <input type="text" id="calc-input" name="i">
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    Input:
+    <latex-js id="input-out">
+        <!--$$1+\frac{1}{2}$$-->
+    </latex-js>
+
+    <hr>
+
+    Simplified:
+    <latex-js id="simply-out">
+        <!--$$1+\frac{1}{2}$$-->
+    </latex-js>
+
+    <hr>
+
+    Derivative:
+    <latex-js id="deriv-out">
+        <!--$$1+\frac{1}{2}$$-->
+    </latex-js>
+
+    <hr>
+
+    <footer style="color: lightgrey">
+        Disclaimer: Simplification is not perfect. No guarantee for correct results. Multiplication without '*' doesn't work
+    </footer>
+</div>
+
+<script src="WolfgangBeta.js"></script>
+</body>
+</html>
