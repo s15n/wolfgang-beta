@@ -3,12 +3,4 @@
 kotlin-js-store/
 
 
-build/classes/
-build/compileSync/
-build/js/
-build/kotlin/
-build/libs/
-build/processedResources/
-build/reports/
-build/snapshot/
-build/tmp/
+build/
